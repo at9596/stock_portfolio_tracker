@@ -1,4 +1,5 @@
 import DashboardMetrics from './components/DashboardMetrics';
+import PortfolioCharts from './components/PortfolioCharts';
 import TransactionForm from './components/TransactionForm';
 import { usePortfolioStore } from './store/usePortfolioStore';
 import { usePricePoller } from './hooks/usePricePoller';
@@ -24,6 +25,7 @@ export default function App() {
         </div>
       )}
       <DashboardMetrics />
+      <PortfolioCharts />
       
       <TransactionForm />
       
