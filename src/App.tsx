@@ -1,3 +1,4 @@
+import DashboardMetrics from './components/DashboardMetrics';
 import TransactionForm from './components/TransactionForm';
 import { usePortfolioStore } from './store/usePortfolioStore';
 import { usePricePoller } from './hooks/usePricePoller';
@@ -22,8 +23,10 @@ export default function App() {
           <strong>API error discovered:</strong> {error}
         </div>
       )}
+      <DashboardMetrics />
       
       <TransactionForm />
+      
 
       {/* Simple debug checklist display underneath to confirm the state is writing properly */}
       <section style={{ maxWidth: '500px', margin: '2rem auto' }}>
